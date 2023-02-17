@@ -704,7 +704,7 @@ div[class$=__container] {
 }
 .articles__item {
   position: relative;
-  width: 290px;
+  width: 350px;
   transition: all 0.3s;
   overflow: hidden;
 }
