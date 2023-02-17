@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson3</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1 id="title"><mark>Порад для написання сучасного CSS</mark></h1>
+    <br>
+    <br>
+    <ul class="list">
+        <li class="item"><a href="#flexbox" class="link"><mark>1.</mark> Використовуйте flexbox</a></li>
+        <li class="item"><a href="#reset" class="link"><mark>2.</mark> Завжди скидайте CSS</a></li>
+        <li class="item"><a href="#Border-box" class="link"><mark>3.</mark> Border-box</a></li>
+        <li class="item"><a href="#animation" class="link"><mark>4.</mark> CSS анімації</a></li>
+        <li class="item"><a href="#important" class="link"><mark>5.</mark> Не використовуйте !important</a></li>
+        <li class="item"><a href="#prepro" class="link"><mark>6.</mark> Використовуй препроцесори, Люк</a></li>
+        <li class="item"><a href="#validate" class="link"><mark>7.</mark> Валідація</a></li>
+    </ul>
+    <br>
+    <br>
+    <div>
+        <h2 class="title-two-lvl" id="flexbox"><mark>Використовуйте flexbox</mark></h2>
+        <p class="text">Flexbox створили не просто так. Звісно, float та інлайн-блоки працюють, але це по суті інструменти для стилізації документів, а не сайтів. Flexbox, в свою чергу, спеціально розроблений для створення макетів. Набір властивостей, що використовуються з flexbox дають розробнику дуже гнучкий механізм створення адаптивних сторінок. З flexbox ви полюбите адаптивну верстку. На сьогодні він має дуже гарну підтримку в браузерах, так що вас нічого не повинно зупиняти.</p>
+        <img src="img/2.png" alt="картинка">
+        <p class="text">Якщо це вас зацікавило, в нас є <a href="https://codeguida.com/post/466/" target="_blank" class="article">стаття</a>, де описано 5 різних випадків використання flexbox.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2 class="title-two-lvl" id="reset"><mark>Завжди скидайте CSS</mark></h2>
+        <p class="text__info one__color">Хоча за останні роки ситуація поліпшилася, відображення елементів в різних браузерах все ще досить відрізняється. Найкращий спосіб виправити це — скинути стилів для всіх елементів.</p>
+        <p class="text__info one__color">Для цього є вже готові бібліотеки:  <a href="https://codeguida.com/post/466/" target="_blank" class="article">normalize.css</a>,  <a href="https://codeguida.com/post/466/" target="_blank" class="article">minireset</a> та  <a href="https://codeguida.com/post/466/" target="_blank" class="article">ress</a>. Якщо ви не хочете використовувати бібліотеку, ви можете зробити це самі. Наприклад, так (це дуже зверхній приклад):</p>
+        <img src="img/CSS-Reset.jpg" alt="картинка">
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2 class="title-two-lvl" id="Border-box"><mark>Border-box для всіх, і нехай ніхто не піде ображеним</mark></h2>
+        <p class="text__red">Більшість новачків не знають про властивість box-sizing. А дарма, вона дуже важлива. Кращим способом зрозуміти її значення буде розглянути два можливі значення:</p>
+        <ul>
+            <li class="text__list">content-box (за умовчуванням) — коли ми задаємо ширину чи висоту елемента, змінюється розмір контенту всередині, а padding і рамка (border) додаються до цього значення. Тобто, якщо ми задамо div'у з padding: 10px ширину 100px, то в макеті він займе 120px (100 + 10*2).</li>
+            <li class="text__list">border-box — в цьому випадку padding та рамка вже включені в розміри блока, і тепер div з шириною 100px займе рівно стільки ж місця в макеті.</li>
+        </ul>
+        <img src="img/border-box.svg" alt="картинка">
+        <p class="text__dual">Встановлення border-box для всіх елементів робить вашу роботу простіше, позбавляючи необхідності кожен раз рахувати.</p>
+    </div>
+    <br>
+    <br>
+    <div class="box__color-text">
+        <h2 class="box__title title-two-lvl" id="animation"><mark>CSS анімації за допомогою transform</mark></h2>
+        <p>Не анімуйте ваші елементи зміною ширини, висоти чи відступів. Краще використовувати властивість transform, що надає зручний спосіб для зміни вигляду елементу.</p>
+        <p>Наприклад, ми хочемо анімацію мяча, що вилітає зліва.</p>
+        <img src="img/ss_transform.webp" alt="картинка">
+        <p>Transform може приймати велику кількість функцій (translate, rotate, scale та інші).</p>
+    </div>
+    <br>
+    <br>
+    <div class="imported">
+        <h2 class="title-two-lvl" id="important"><mark>Не використовуйте !important</mark></h2>
+        <p>Зовсім. Те, що спочатку здається швидким рішенням проблем, стає великою проблемою в майбутній підтримці коду. Не лініться і знайдіть проблему в селекторі і чому він не працює, та виправте.</p>
+        <p>Єдиний випадок, коли можна використовувати !important, це перезаписання інлайн стилів, що вказані в HTML ( div ).</p>
+        <img src="img/rem-vs-em.jpg" alt="картинка"> 
+    </div>
+    <br>
+    <br>
+    <div class="friends__colors">
+        <h3 class="title-two-lvl" id="prepro"><mark>Використовуй препроцесори, Люк</mark></h3>
+        <p>Ви вже чули про них: Sass, Less, PostCSS (насправді це постпроцесор — прим. пер.), Stylus. Препроцесори - наступна ланка в еволюції CSS. Вони дозволяють використовувати змінні, функції, вкладені селектори і інші круті речі, що роблять написання CSS дійсно приємним.</p>
+        <p>Наприклад, ось так в Sass використовуються змінні і функції:</p>
+        <img src="img/prepro.gif" alt="картинка">
+        <p>Єдиним мінусом є те, що код на препроцесорах повинен збиратися в звичайний CSS. Проте, якщо ви вже використовуєте збиральники проектів (Grunt, Gulp, WebPack) - це не буде проблемою. А якщо не використовуєте, то слід почати.</p>
+        <p>Якщо ви вирішили спробувати, але не знаєте що саме, то в нас є порівняння Sass vs Less vs Stylus. Якщо ж вже вирішили, то в нас є статті про LESS і про Sass, і ще одна.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2 class="next__p title-two-lvl" id="validate"><mark>Валідація</mark></h2>
+        <p>Можливо, валідація CSS не така важлива як валідація HTML чи JS, але перевірка ваших стилів через CSS Linter вкаже на помилки, попередить про використання поганих практик і підкаже як ваш код можна поліпшити.</p>
+        <p>Зробити це теж можна різними шляхами:</p>
+        <ul>
+            <li class="item__style next__li">Онлайн інструменти W3 Validator, CSS Lint</li>
+            <li class="item__style">Плагіни для редакторів: Sublime Text, Atom</li>
+            <li class="item__style">Бібліотеки stylelint (Node.js, PostCSS), CSSO та css-validator (Node.js)</li>
+        </ul>
+        <img src="img/validate.png" width="700" alt="картинка">
+    </div>
+    <br>
+    <a href="#title"><img src="img/back.jpg" width="200" alt="back"></a> 
+</body>
+</html>

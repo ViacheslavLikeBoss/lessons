@@ -1,0 +1,63 @@
+@import url(reset.css);
+
+* {
+    color: rgb(36, 43, 102);
+}
+
+.link {
+    color: blue;
+}
+
+.item__style {
+    color: lightcoral;
+}
+
+.article {
+    color: blue;
+}
+
+.title-two-lvl {
+    color: red;
+}
+
+#title {
+    color: brown;
+}
+
+p.text {
+    color: #555555;
+}
+
+.text__info.one__color{
+    color: coral;
+}
+
+.text__red,
+.text__dual,
+.text__list {
+    color: darkcyan;
+}
+
+.box__color-text p{
+    color: fuchsia;
+}
+
+.box__color-text .box__title {
+    color: gold;
+}
+
+.friends__colors *{
+    color: coral;
+}
+
+.imported > p {
+    color: springgreen;
+}
+
+.next__p ~ p {
+    color: lightcoral;
+}
+
+.next__li + li {
+    color: blue;
+}

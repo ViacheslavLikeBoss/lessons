@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Ancient Kyiv';
+    src: url('../fonts/AncientKyiv.woff2') format('woff2'),
+        url('../fonts/AncientKyiv.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdverGothicC';
+    src: url('../fonts/AdverGothicC.woff2') format('woff2'),
+        url('../fonts/AdverGothicC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AnastasiaScript';
+    src: url('../fonts/AnastasiaScript.woff2') format('woff2'),
+        url('../fonts/AnastasiaScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adventure';
+    src: url('../fonts/Adventure.woff2') format('woff2'),
+        url('../fonts/Adventure.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("reset.css");
+
+[class*='__container'] {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.header {
+    background: url('../img/bg.jpg') center / cover no-repeat;
+}
+
+.header__title-box > * {
+    margin-bottom: 15px;
+}
+
+.header__box {
+    padding-top: 36px;
+    padding-bottom: 100px;
+}
+
+.header__nav-menu {
+    margin-bottom: 110px;
+}
+
+.header__nav-menu img:first-child {
+    margin-bottom: 20px;
+}
+
+.header__nav-link {
+    color: rgba(248, 249, 250, 0.5);
+}
+
+.header__nav-link:hover {
+    color: #F8F9FA;
+}
+
+.header__nav-list > * {
+    margin-bottom: 20px;
+}
+
+.header__nav-list > *:last-child{
+    margin-bottom: 0;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: #F8F9FA;
+    max-width: 605px;
+}
+
+.header__text {
+    font-size: 12px;
+    line-height: 20px;
+    color: #E5E5E5;
+}
+
+.header__title-box > :last-child {
+    margin-bottom: 0;
+}
+
+.main {
+    background: url('../img/opac.png') 95% center  no-repeat, #F4F7FF url('../img/opac.png') 90% center  no-repeat;
+    font-family: 'Inter', sans-serif;
+    color: #637381;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main__container {
+    background: url('../img/speaker 1.png') 83% center  no-repeat;
+    padding: 145px 15px;
+}
+
+.main__main-info-box {
+    max-width: 570px;
+}
+
+.main__title-box > * {
+    margin-bottom: 15px;
+}
+
+.main__text-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3056D3;
+}
+
+.main__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #212B36;
+}
+
+.main__text {
+    margin-bottom: 35px;
+}
+
+.main__btn {
+    display: inline-block;
+    color: white;
+    background: #3056D3;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+}
+
+.main__btn:hover {
+    color: #3056D3;
+    background: white;
+    border: 1px solid #D4DEFF;
+}
+
+.main__btn:active {
+    color: rgba(48, 86, 211, 0.7);
+    background: #F4F7FF;
+    border: 1px solid #D4DEFF;
+}
+
+.main__title-box > *:last-child {
+    margin-bottom: 0;
+}
+
+.footer {
+    padding: 100px 0;
+    background: -webkit-linear-gradient(90deg,#f0f4f1,#f89130,#1d3e9c); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#f0f4f1,#f89130,#1d3e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer__title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+    color: #212B36;
+    margin-bottom: 45px;
+}
+
+.footer-list {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #637381;
+    margin-bottom: 60px;
+}
+
+.footer-item {
+    min-height: 20px;
+}
+
+.footer-list:last-child {
+    margin-bottom: 0;
+}
+
+.footer-list > * {
+    margin-bottom: 18px;
+} 
+
+.footer-list > .circle::before {
+    content: "";
+    padding-left: 20px;
+    background: url('../img/circle.png') 0 5px no-repeat;
+}
+
+.footer-list > .circle-blue::before {
+    content: "";
+    padding-left: 30px;
+    background: url('../img/circle-blue.png') 0 0 no-repeat;
+}
+
+.footer-list > .circle-green::before {
+    content: "";
+    padding-left: 30px;
+    background: url('../img/circle-green.png') 0 0 no-repeat;
+}
+
+.footer-list > .circle-red::before {
+    content: "";
+    padding-left: 30px;
+    background: url('../img/circle-red.png') 0 0 no-repeat;
+}
+
+.footer-list > .vector::before {
+    content: "";
+    padding-left: 30px;
+    padding-top: 10px;
+    display: inline-block;
+    background: url('../img/vector.png') 0 0 no-repeat;
+}
+
+.footer-list > .star::before {
+    content: "";
+    padding-left: 30px;
+    background: url('../img/star.png') 0 0 no-repeat;
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url("reset.css");
+
+[class*='__container'] {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+[class*='__info-box'] {
+    max-width: 816px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.wrapper {
+    padding: 100px 0;
+}
+
+/* .container {
+    max-width: 1240px;
+    margin: 0 auto;
+} */
+
+.title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: #212529;
+} 
+
+.text {
+    line-height: 25px;
+    color: #6C757D;
+}
+
+.img {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.header__title {
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+.header__text-block {
+    margin-bottom: 80px;
+}
+
+.header__img-block {
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.header__text {
+    margin-bottom: 25px;
+}
+
+.main {
+    margin-bottom: 100px;
+}
+
+.main__title {
+    max-width: 605px;
+    margin-bottom: 40px;
+}
+
+.main__text {
+    margin-bottom: 25px;
+}
+
+.main__text-block {
+    margin-bottom: 80px;
+}
+
+.main__img-block {
+    margin-bottom: 80px;
+    font-size: 0;
+    max-width: 100%;
+}
+
+.main__img-block > img{
+    max-width: 100%;
+}
+
+.main__img-one {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer__img-box {
+    margin-bottom: 100px;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+.footer__text {
+    margin-bottom: 25px;
+}
+
+.footer__info-box {
+    margin-bottom: 100px;
+}
+
+.footer__text-text {
+    margin-bottom: 100px;
+}
+
+.footer__title {
+    max-width: 605px;
+}
+
+.footer__block-img {
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 0;
+}
+
+.footer__img-one {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer__text-box .footer__text {
+    margin-bottom: 0;
+}
+
+.homework__container {
+    padding: 0 25px;
+}
+
+.homework__text-box {
+    box-shadow: 0px 0px 20px 10px #000;
+    padding: 50px 0;
+    outline: 5px solid blue;
+    border-top: 15px dashed green;
+	border-right: 15px solid #000;
+	border-bottom: 15px dotted red;
+	border-left: 15px solid yellow;
+    margin-bottom: 80px;
+}
+
+.homework__circle {
+    width: 340px;
+    height: 340px;
+    box-shadow: inset 0px 0px 20px 0px #000;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.homework__circle-opacity {
+    opacity: 0.3;
+}
+
+.homework__circle-visibility {
+    visibility: hidden;
+}
