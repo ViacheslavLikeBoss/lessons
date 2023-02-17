@@ -704,8 +704,7 @@ div[class$=__container] {
 }
 .articles__item {
   position: relative;
-  width: 350px;
-  height: 370px;
+  width: 290px;
   transition: all 0.3s;
   overflow: hidden;
 }
@@ -715,12 +714,14 @@ div[class$=__container] {
 .articles__link {
   background: linear-gradient(180deg, rgba(180, 180, 180, 0) 0%, #333333 100%), url(.jpg);
   transition: all 0.3s;
+  width: 290px;
 }
 .articles__link:hover {
   transform: scale(1.05);
 }
 .articles__img {
   object-fit: cover;
+  width: 100%;
 }
 .articles__span {
   position: absolute;
