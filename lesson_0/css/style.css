@@ -509,6 +509,7 @@ div[class$=__container] {
 }
 .catalog-item__img {
   object-fit: cover;
+  width: 100%;
 }
 .catalog-item__span {
   position: absolute;
