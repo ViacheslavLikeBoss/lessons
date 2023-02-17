@@ -498,7 +498,6 @@ div[class$=__container] {
   font-weight: 500;
   font-size: 24px;
   width: 350px;
-  height: 280px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: all 0.3s;
@@ -518,6 +517,7 @@ div[class$=__container] {
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  z-index: 10;
 }
 
 @media (max-width: 1150px) {
