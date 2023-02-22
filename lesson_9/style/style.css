@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("reset.css");
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+[class*="__info"] {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+[class*="__title"] {
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+    color: #0055ff;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+[class*="__text"] {
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+    color: #FF6C02;
+}
+
+[class*="__icon"] {
+    vertical-align: middle;
+    margin: 0 10px 30px 0;
+}
+
+[class*="__img"] {
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0 10px 30px 0;
+    border-radius: 15px;
+}
+
+.wrapper {
+    padding: 50px 0;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,120,9,1) 35%, rgba(2,0,36,1) 100%);
+}
+
+.icon__container {
+    margin-bottom: 80px;
+}
+
+.icon__info {
+    margin-bottom: 60px;
+}
+
+.dising__container {
+    margin-bottom: 80px;
+}
+
+.dising__info {
+    margin-bottom: 60px;
+} 
+
+.content__info {
+    margin-bottom: 60px;
+}
+
+.content__ellipse {
+    border-radius: 50%;
+}
