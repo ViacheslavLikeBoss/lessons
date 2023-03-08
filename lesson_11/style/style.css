@@ -302,8 +302,7 @@ body {
 
 .main__block {
     height: 100%;
-    background: rgba(255, 255, 255, 1);
-    padding-top: 50px;
+    background: rgba(229, 229, 229, 1);
 }
 
 .main__collection-slider {
