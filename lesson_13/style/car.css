@@ -498,7 +498,7 @@
 
 .car__bath::after {
     content: '';
-    background: url(/img/img.png) bottom/cover no-repeat;
+    background: url(../img/img.png) bottom/cover no-repeat;
     width: 290px;
     height: 57px;
     position: absolute;
@@ -509,7 +509,7 @@
 
 .car__bath::before {
     content: '';
-    background: url(/img/pngwing.com.png) center/30px 30px no-repeat;
+    background: url(../img/pngwing.com.png) center/30px 30px no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;
