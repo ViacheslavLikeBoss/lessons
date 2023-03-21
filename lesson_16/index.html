@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>lesson_16</title>
+</head>
+<body>
+    <div class="wrapper"> 
+        <header class="header">
+            <div class="header__container"></div>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <div class="page__content">
+                    <div class="page__form-ecommerce">
+                        <div class="page__block-title">
+                            <h2 class="page__title title-bold">Checkout</h2>
+                            <p class="page__text text">There are 3 products in your cart</p>
+                        </div>
+                        <form action="http://jsonplaceholder.typicode.com/posts" class="ecommerce-form" method="post">
+                            <h3 class="ecommerce-form__title">Billing Details</h3>
+                            <div class="ecommerce-form__items-input">
+                                <div class="ecommerce-form__input-block">
+                                    <input type="text" class="ecommerce-form__input" name="first-name" required>
+                                    <div class="ecommerce-form__label">First name<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="text" class="ecommerce-form__input" name="last-name" required>
+                                    <div class="ecommerce-form__label">Last name<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="text" class="ecommerce-form__input" name="address" required>
+                                    <div class="ecommerce-form__label">Address<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="text" class="ecommerce-form__input" name="address-two" required>
+                                    <div class="ecommerce-form__label">Address line 2<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="text" class="ecommerce-form__input" name="country" required>
+                                    <div class="ecommerce-form__label">Country<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="text" class="ecommerce-form__input" name="city-town" required>
+                                    <div class="ecommerce-form__label">City / Town<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="text" class="ecommerce-form__input" name="postcode-zip" required>
+                                    <div class="ecommerce-form__label">Postcode / ZIP<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="tel" class="ecommerce-form__input" name="phone" required>
+                                    <div class="ecommerce-form__label">Phone<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="text" class="ecommerce-form__input" name="postcode-zip-two" required>
+                                    <div class="ecommerce-form__label">Postcode / ZIP<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block">
+                                    <input type="tel" class="ecommerce-form__input" name="phone-two" required>
+                                    <div class="ecommerce-form__label">Phone<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                                <div class="ecommerce-form__input-block ecommerce-form__textarea-block">
+                                    <textarea name="additional-information" class="ecommerce-form__textarea" required></textarea>
+                                    <div class="ecommerce-form__label ecommerce-form__textarea-label">Additional information<span class="ecommerce-form__star">*</span></div>
+                                </div>
+                            </div>
+                            <div class="ecommerce-form__checkbox">
+                                <div class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="create-account" id="create-account">
+                                    <label class="checkbox__label text" for="create-account" >Create Account</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="different-address" id="different-address">
+                                    <label class="checkbox__label text" for="different-address">Ship to a different address?</label>
+                                </div>
+                            </div>
+                            <div class="ecommerce-form__block-coupon">
+                                <h3 class="ecommerce-form__title-semi-bold">Apply Coupon to get discount!</h3>
+                                <div class="ecommerce-form__discount discount">
+                                    <div class="discount__block">
+                                        <input class="discount__input" type="text" name="coupon" required>
+                                        <div class="discount__label">Coupon code<span class="ecommerce-form__star">*</span></div>
+                                    </div>
+                                    <button type="submit" class="discount__btn">Apply Code</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="page__shipping-form">
+                        <form action="http://jsonplaceholder.typicode.com/posts" class="form-shipping" method="post">
+                            <h2 class="form-shipping__title title-shipping">Shipping Address</h2>
+                            <div class="form-shipping__block-input">
+                                <label for="email" class="form-shipping__label">Email Address <span class="form-shipping__star">*</span></label>
+                                <input type="email" name="email" id="email" class="form-shipping__input" required>
+                            </div>
+                            <div class="form-shipping__block-input">
+                                <label for="password" class="form-shipping__label">Password</label>
+                                <input type="password" name="password" id="password" class="form-shipping__input">
+                            </div>
+                            <div class="form-shipping__block-input">
+                                <label for="zip-code" class="form-shipping__label">Zip/Postal Code</label>
+                                <input type="number" name="zip-code" id="zip-code" class="form-shipping__input">
+                            </div>
+                            <div class="form-shipping__text-continue">You already have an account with us. Sign in or continue as guest.</div>
+                            <div class="form-shipping__block-btn">
+                                <button class="form-shipping__login-btn btn-shipping" type="submit">login</button>
+                                <a href="#" class="form-shipping__forgot-pass-link">Forgot Your Password?</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="page__register-adress">
+                        <form action="http://jsonplaceholder.typicode.com/posts" class="form-shipping" method="post">
+                            <div class="form-shipping__form-block">
+                                <div class="form-shipping__block-input">
+                                    <label for="first-name-shipping" class="form-shipping__label">First Name <span class="form-shipping__star">*</span></label>
+                                    <input type="text" name="first-name-shipping" id="first-name-shipping" class="form-shipping__input" required>
+                                </div>
+                                <div class="form-shipping__block-input">
+                                    <label for="last-name-shipping" class="form-shipping__label">Last Name <span class="form-shipping__star">*</span></label>
+                                    <input type="text" name="last-name-shipping" id="last-name-shipping" class="form-shipping__input" required>
+                                </div>
+                                <div class="form-shipping__block-input">
+                                    <label for="company-shipping" class="form-shipping__label">Company</label>
+                                    <input type="text" name="company-shipping" id="company-shipping" class="form-shipping__input">
+                                </div>
+                                <div class="form-shipping__block-input">
+                                    <label for="street-address-shipping" class="form-shipping__label">Street Address <span class="form-shipping__star">*</span></label>
+                                    <input type="text" name="street-address-shipping" id="street-address-shipping" class="form-shipping__input" required>
+                                </div>
+                                <div class="form-shipping__block-input form-shipping__block-input_end">
+                                    <input type="text" name="street-address-shipping-two" class="form-shipping__input">
+                                </div>
+                                <div class="form-shipping__block-input form-shipping__block-input_end">
+                                    <input type="text" name="street-address-shipping-free" class="form-shipping__input">
+                                </div>
+                                <div class="form-shipping__block-input">
+                                    <label for="country-shipping" class="form-shipping__label">Country <span class="form-shipping__star">*</span></label>
+                                    <input type="text" name="country-shipping" id="country-shipping" class="form-shipping__input" required>
+                                </div>
+                                <div class="form-shipping__block-input form-shipping__block-input_relative">
+                                    <label for="state-province-shipping" class="form-shipping__label">State/Province <span class="form-shipping__star">*</span></label>
+                                    <select name="state-province-shipping" id="state-province-shipping" class="form-shipping__select">
+                                        <option class="form-shipping__option" value="none">Please select a region, state or province</option>
+                                        <option class="form-shipping__option" value="Ukraine">Ukraine</option>
+                                        <option class="form-shipping__option" value="England">England</option>
+                                        <option class="form-shipping__option" value="Poland">Poland</option>
+                                        <option class="form-shipping__option" value="USA">USA</option>
+                                        <option class="form-shipping__option" value="Norway">Norway</option>
+                                        <option class="form-shipping__option" value="India">India</option>
+                                        <option class="form-shipping__option" value="China">China</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="shipping-methods">
+                                <h2 class="shipping-methods__title title-shipping">Shipping Methods</h2>
+                                <div class="shipping-methods__block-radio">
+                                    <div class="shipping-methods__methods-radio shipping-methods__methods-radio_line">
+                                        <input class="shipping-methods__radio" type="radio" id="flat-rate" name="flat-rate" value="flat-rate">
+                                        <label class="shipping-methods__label" for="flat-rate">$5.00</label>
+                                        <p class="shipping-methods__info">Fixed</p>
+                                        <p class="shipping-methods__info">Flat Rate</p>
+                                    </div>
+                                    <div class="shipping-methods__methods-radio">
+                                        <input class="shipping-methods__radio" type="radio" id="table-rate" name="flat-rate" value="table-rate">
+                                        <label class="shipping-methods__label" for="table-rate">$10.00</label>
+                                        <p class="shipping-methods__info">Table Rate</p>
+                                        <p class="shipping-methods__info">Best Way</p>
+                                    </div>
+                                </div>
+                                <div class="shipping-methods__block-btn">
+                                    <button class="shipping-methods__next-btn btn-shipping" type="submit">next</button>
+                                    <button class="shipping-methods__back-btn" type="reset">Back</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container"></div>
+        </footer>
+    </div>
+</body>
+</html>
