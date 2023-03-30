@@ -74,7 +74,7 @@ body {
     background: rgba(244, 247, 255, 1);
 }
 
-.all-categories__item:hover .category-list {
+.all-categories__item:hover .all-categories__new-list {
     opacity: 1;
     visibility: visible;
 }
@@ -82,7 +82,10 @@ body {
 .all-categories__new-list {
     position: absolute;
     left: 0;
-    top: 75px;
+    top: 24px;
+    padding-top: 50px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .all-categories__new-list::before {
@@ -93,13 +96,11 @@ body {
     height: 20px;
     width: 30px;
     left: 15px;
-    top: -15px;
+    top: 35px;
     z-index: 2;
 }
 
 .category-list {
-    opacity: 0;
-    visibility: hidden;
     min-width: 180px;
     background: rgba(255, 255, 255, 1);
     border: 0.5px solid rgba(231, 231, 231, 1);
