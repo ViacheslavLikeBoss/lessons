@@ -217,9 +217,6 @@ body {
 
 .info-title {
     max-width: 518px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
@@ -310,6 +307,10 @@ body {
     gap: 24px;
     padding: 0 15px;
     flex: 1 1 50%;
+}
+
+.description-design__title {
+    font-weight: 600;
 }
 
 .page__ilustrations {
@@ -531,6 +532,7 @@ body {
     position: relative;
     font-size: 16px;
     line-height: 160%;
+    padding-right: 40px;
     color: #D9D9D9;
     background-color: transparent;
     outline: none;
@@ -590,7 +592,6 @@ body {
     padding: 15px 34px;
     overflow: hidden;
     color: white;
-    white-space: nowrap;
     letter-spacing: 1px;
     font-weight: 600;
     border-width: 0;
